@@ -7,8 +7,39 @@
 
     <script type="module" src="/build/jm-responsive-side-drawer.esm.js"></script>
     <script nomodule src="/build/jm-responsive-side-drawer.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+      }
+      
+      li {
+        padding: 0.5rem 0.25rem;
+        border-bottom: solid 1px rgb(199, 199, 199);
+      }
+
+      li:hover {
+        color: white;
+        background: black;
+        cursor: pointer;
+      }
+
+    </style>
   </head>
   <body>
-    
+    <jm-side-drawer title="App Name Here">
+      <ul>
+        <li href="/">Home</li>
+        <li href="/">About</li>
+        <li href="/">Contact</li>
+      </ul>
+    </jm-side-drawer>
   </body>
 </html>
